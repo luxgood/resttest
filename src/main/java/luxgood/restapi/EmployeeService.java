@@ -2,13 +2,14 @@ package luxgood.restapi;
 
 
 import static io.restassured.RestAssured.given;
+import java.util.HashMap;
 import java.util.Map;
 import io.restassured.response.Response;
 
-public class EmployeeService implements EmpService{
+public class EmployeeService implements EmpService {
 
   // private static Cookie cookie;
-  private static Map<String, String> cookies;
+  private static Map<String, String> cookies = new HashMap<String, String>();
 
 
 

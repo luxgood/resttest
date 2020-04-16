@@ -13,10 +13,16 @@ public class Employee {
 
   }
 
+  public Employee(String name, Integer salary, Integer age) {
+    this.name = name;
+    this.salary = salary;
+    this.age = age;
+  }
+
   public Employee(boolean isFake) {
-    
+
     Faker fk = new Faker();
-    
+
     this.name = fk
         .name() + " "
         + fk
